@@ -1,0 +1,213 @@
+* {
+	font-family: sectra-display;
+	/*border: 1px solid white;*/
+}
+
+.fullscreen-video {
+	position: fixed;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -100;
+}
+
+.hearted, .kombucha, .zivit{
+	position: fixed;
+	left: 0;
+	top: 0;
+	max-width: 100%;
+	z-index: -50;
+	opacity: 0.9;
+}
+
+
+.hover-block{
+	background-color: skyblue;
+	opacity: 0.3;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100px;
+	opacity: 0;
+}
+
+
+.H{
+	position: absolute;
+	left: 6%;
+	top: 65%;
+
+
+	-webkit-transition: color 2s;
+    -moz-transition:    color 2s;
+    -ms-transition:     color 2s;
+    -o-transition:      color 2s;
+    transition:         color 2s;
+}
+
+.H:hover{
+	color: #fc2ffc;
+}
+
+
+.K{
+	position: absolute;
+	left: 26%;
+	top: 17%;
+}
+
+.K:hover {
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(2px, 2px) rotate(0deg); }
+    10% { transform: translate(-2px, -3px) rotate(-1deg); }
+    20% { transform: translate(-4px, -1px) rotate(1deg); }
+    30% { transform: translate(4px, 3px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 3px) rotate(-1deg); }
+    60% { transform: translate(-4px, 2px) rotate(0deg); }
+    70% { transform: translate(4px, 2px) rotate(-1deg); }
+    80% { transform: translate(-2px, -2px) rotate(1deg); }
+    90% { transform: translate(2px, 3px) rotate(0deg); }
+    100% { transform: translate(2px, -3px) rotate(-1deg); }
+}
+
+
+.C{
+	position: absolute;
+	left: 49%;
+	top: 47%;
+}
+
+.S{
+	position: absolute;
+	left: 78%;
+	top: 30%;
+}
+
+.Z{
+	position: absolute;
+	left: 69%;
+	top: 78%;
+
+	-webkit-transition: font-size 0.6s;
+    -moz-transition:    font-size 0.6s;
+    -ms-transition:     font-size 0.6s;
+    -o-transition:      font-size 0.6s;
+    transition:         font-size 0.6s;
+}
+
+.Z:hover{
+	font-size: 60px;
+}
+
+
+.ello-text, .isses-text, .lassic-text, .erve-text, .esty-text {
+	position:relative;
+	top: 61px;
+}
+
+.ello-text {
+	left: 103px;
+}
+
+.isses-text {
+	left: 102px;
+}
+
+.lassic-text {
+	left: 100px;
+}
+
+.erve-text {
+	left: 74px;
+}
+
+.esty-text {
+	left: 78px;
+}
+
+
+.earted-text, .ombucha-text, .ivit-text{
+	position:relative;
+	top: -173px;
+}
+
+.earted-text {
+	left: 103px;
+}
+
+.ombucha-text {
+	left: 98px;
+	width: 700px;
+}
+
+.ivit-text {
+	left: 78px;
+}
+
+.sentence {
+	position: absolute;
+	color: white;
+	font-size: 70px;
+
+/*	-webkit-transition: display 2s;
+    -moz-transition:    display 2s;
+    -ms-transition:     display 2s;
+    -o-transition:      display 2s;
+    transition:         display 2s;*/
+}
+
+}
+
+.sentence-black {
+	position: absolute;
+	color: white;
+	font-size: 70px; !important
+}
+
+.font {
+	position: absolute;
+	color: white;
+	font-size: 140px;
+	height: 150px;
+}
+
+@font-face {
+	font-family: sectra-display;
+	src: url(../font/GT-Sectra-Display-Regular.ttf);
+}
+
+.black{
+	color: black;
+}
+
+.fade-out{
+	opacity: 1;
+	animation: fade 1.5s linear;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade {
+	0% { opacity: 1}
+	100% {opacity: 0}
+}
+
+.fade-in{
+	opacity: 0;
+	animation: in 1.5s linear;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes in {
+	0% { opacity: 0}
+	100% {opacity: 1}
+}
+
+.hide {
+	display: none;
+}
