@@ -38,6 +38,24 @@
 	left: 6%;
 	top: 65%;
 
+	-webkit-transition: color 2s, font-size 0.6s;
+    -moz-transition:    color 2s, font-size 0.6s;
+    -ms-transition:     color 2s, font-size 0.6s;
+    -o-transition:      color 2s, font-size 0.6s;
+    transition:         color 2s, font-size 0.6s;
+
+}
+
+.H:hover{
+	color: #fc2ffc;
+	font-size: 100px;
+}
+
+
+.K{
+	position: absolute;
+	left: 26%;
+	top: 17%;
 
 	-webkit-transition: color 2s;
     -moz-transition:    color 2s;
@@ -46,20 +64,10 @@
     transition:         color 2s;
 }
 
-.H:hover{
-	color: #fc2ffc;
-}
-
-
-.K{
-	position: absolute;
-	left: 26%;
-	top: 17%;
-}
-
 .K:hover {
     animation: shake 0.5s; 
     animation-iteration-count: infinite; 
+    color: #ce061a;
 }
 
 @keyframes shake {
@@ -81,28 +89,54 @@
 	position: absolute;
 	left: 49%;
 	top: 47%;
+
+	-webkit-transition: opacity 1.6s;
+    -moz-transition:    opacity 1.6s;
+    -ms-transition:     opacity 1.6s;
+    -o-transition:      opacity 1.6s;
+    transition:         opacity 1.6s;
+
+}
+
+.C:hover {
+	opacity: 0;
 }
 
 .S{
 	position: absolute;
 	left: 78%;
 	top: 30%;
+
+	-webkit-transition: opacity 1.6s;
+    -moz-transition:    opacity 1.6s;
+    -ms-transition:     opacity 1.6s;
+    -o-transition:      opacity 1.6s;
+    transition:         opacity 1.6s;
+}
+
+.S:hover {
+	opacity: 0;
 }
 
 .Z{
 	position: absolute;
 	left: 69%;
 	top: 78%;
+	transform: rotate(0);
+	transition: transform 1.4s ease;
 
-	-webkit-transition: font-size 0.6s;
-    -moz-transition:    font-size 0.6s;
-    -ms-transition:     font-size 0.6s;
-    -o-transition:      font-size 0.6s;
-    transition:         font-size 0.6s;
+	-webkit-transition: color 1.9s, transform 1.4s;
+    -moz-transition:    color 1.9s, transform 1.4s;
+    -ms-transition:     color 1.9s, transform 1.4s;
+    -o-transition:      color 1.9s, transform 1.4s;
+    transition:         color 1.9s, transform 1.4s;
+
 }
 
 .Z:hover{
-	font-size: 60px;
+	transform: rotate(270deg);
+	color: #2777f7;
+
 }
 
 
@@ -134,7 +168,7 @@
 
 .earted-text, .ombucha-text, .ivit-text{
 	position:relative;
-	top: -173px;
+	top: 61px;
 }
 
 .earted-text {
@@ -154,21 +188,16 @@
 	position: absolute;
 	color: white;
 	font-size: 70px;
-
-/*	-webkit-transition: display 2s;
-    -moz-transition:    display 2s;
-    -ms-transition:     display 2s;
-    -o-transition:      display 2s;
-    transition:         display 2s;*/
 }
 
-}
 
 .sentence-black {
 	position: absolute;
-	color: white;
+	color: black;
 	font-size: 70px; !important
+	/*why does the size keep with the parent tag!!!???*/
 }
+
 
 .font {
 	position: absolute;
@@ -211,3 +240,93 @@
 .hide {
 	display: none;
 }
+
+.summary-H, .summary-Z, .summary-K, .enter-H, .enter-Z, .enter-K, .back-H, .back-Z, .back-K {
+	position: absolute;
+	color: white;
+	font-size: 15px;
+	z-index: 10;
+	letter-spacing: 1px;
+}
+
+.summary-H, .summary-Z, .summary-K {
+	left: 1.2%;
+	bottom: 3%;
+}
+
+.summary-H:hover { font-size: 16px; }
+.summary-Z:hover { font-size: 16px; }
+.summary-K:hover { font-size: 16px; }
+
+.enter-H, .enter-Z, .enter-K {
+	right: 1.5%;
+	bottom: 3%;
+}
+
+.enter-H:hover { font-size: 16px; }
+.enter-Z:hover { font-size: 16px; }
+.enter-K:hover { font-size: 16px; }
+
+.back-H, .back-Z, .back-K {
+	right: 1.5%;
+	top: 3%;
+}
+
+.back-H:hover { font-size: 16px; }
+.back-Z:hover { font-size: 16px; }
+.back-K:hover { font-size: 16px; }
+
+
+.summary-block-H{
+	position: absolute;
+	left: 0;
+	top: 15%;
+	width: 300px;
+	height: 420px;
+	z-index: 10;
+	background-color: #c1263e;
+	opacity: 0.7;
+	border: 0.3px solid black;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+.summary-block-K{
+	position: absolute;
+	left: 0;
+	top: 15%;
+	width: 300px;
+	height: 420px;
+	z-index: 10;
+	background-color: #c1263e;
+	opacity: 0.7;
+	border: 0.3px solid black;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+.summary-block-Z{
+	position: absolute;
+	left: 0;
+	top: 15%;
+	width: 300px;
+	height: 420px;
+	z-index: 10;
+	background-color: #c1263e;
+	opacity: 0.7;
+	border: 0.3px solid black;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+* .summary-block-K, * .summary-block-Z,* .summary-block-H { padding: 10px; }
+
+a {text-decoration: none;}
+
+a:link, a:visited {
+    color: white;
+}
+
+
+
+
