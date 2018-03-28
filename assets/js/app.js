@@ -44,6 +44,7 @@ $('.back-H').click(function(){
 	$('.S').removeClass('hide');
 	$('.Z').removeClass('hide');
 	$('.hover-block').removeClass('hide');
+	$('.summary-H').addClass('hide');
 	$('.summary-block-H').addClass('hide');
 	$('.enter-H').addClass('hide');
 	$('.back-H').addClass('hide');
@@ -78,6 +79,7 @@ $('.back-K').click(function(){
 	$('.S').removeClass('hide');
 	$('.Z').removeClass('hide');
 	$('.hover-block').removeClass('hide');
+	$('.summary-K').addClass('hide');
 	$('.summary-block-K').addClass('hide');
 	$('.enter-K').addClass('hide');
 	$('.back-K').addClass('hide');
@@ -112,6 +114,7 @@ $('.back-Z').click(function(){
 	$('.S').removeClass('hide');
 	$('.K').removeClass('hide');
 	$('.hover-block').removeClass('hide');
+	$('.summary-Z').addClass('hide');
 	$('.summary-block-Z').addClass('hide');
 	$('.enter-Z').addClass('hide');
 	$('.back-Z').addClass('hide');
